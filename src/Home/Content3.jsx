@@ -42,15 +42,15 @@ class Content extends React.Component {
 
   render() {
     const dataArray = [
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L1.jpg' }, content: { children: 'EXERCICE 1' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L2.jpg' }, content: { children: 'EXERCICE 2' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L3.jpg' }, content: { children: 'EXERCICE 3' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L4.jpg' }, content: { children: 'EXERCICE 4' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L5.jpg' }, content: { children: 'EXERCICE 5' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L6.jpg' }, content: { children: 'EXERCICE 6' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L7.jpg' }, content: { children: 'EXERCICE 7' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L8.jpg' }, content: { children: 'EXERCICE 8' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L9.jpg' }, content: { children: 'EXERCICE 9' } } },
+      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L1.jpg' }, content: { children: 'EXERCICE 1' } } },
+      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L2.jpg' }, content: { children: 'EXERCICE 2' } } },
+      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L3.jpg' }, content: { children: 'EXERCICE 3' } } },
+      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L4.jpg' }, content: { children: 'EXERCICE 4' } } },
+      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L5.jpg' }, content: { children: 'EXERCICE 5' } } },
+      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L6.jpg' }, content: { children: 'EXERCICE 6' } } },
+      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L7.jpg' }, content: { children: 'EXERCICE 7' } } },
+      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L8.jpg' }, content: { children: 'EXERCICE 8' } } },
+      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L9.jpg' }, content: { children: 'EXERCICE 9' } } },
     ];
     const childrenToRender = this.getChildrenToRender(dataArray);
     return (

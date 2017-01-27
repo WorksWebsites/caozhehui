@@ -15,9 +15,9 @@ class Banner extends React.Component {
       { children: { title: { children: 'RELATIONS - GROUPE ET LA VILLE' }, content: { children: 'ZHEHUI CAO' }, button: { children: 'Learn More' } } },
     ];
     const defaultImg = [
-      'http://media.caozhehui.cn/caozhehui_works/worksetBg/group2/1.jpg',
-      'http://media.caozhehui.cn/caozhehui_works/worksetBg/group2/2.jpg',
-      'http://media.caozhehui.cn/caozhehui_works/worksetBg/group2/3.jpg',
+      'http://media.zhehuicao.cn/caozhehui_works/worksetBg/group2/1.jpg',
+      'http://media.zhehuicao.cn/caozhehui_works/worksetBg/group2/2.jpg',
+      'http://media.zhehuicao.cn/caozhehui_works/worksetBg/group2/3.jpg',
     ];
     const childrenToRender = childrenData.map((item, i) => {
       const children = item.children;

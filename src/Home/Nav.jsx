@@ -26,7 +26,7 @@ class Header extends React.Component {
         <a href="" className="user">
           <span className="img">
             <img
-              src="http://media.caozhehui.cn/caozhehui_works/assets/caozhehui.png"
+              src="http://media.zhehuicao.cn/caozhehui_works/assets/caozhehui.png"
               width="30"
               height="30"
             />
