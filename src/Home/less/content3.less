@@ -1,0 +1,87 @@
+@import './custom.less';
+
+@content4: content4;
+
+.@{content4} {
+
+  &-wrapper{
+    background-color: #ea0909;
+  }
+  & > h1, & > p {
+    position: relative;
+    top: 10%;
+    text-align: center;
+  }
+  &-img-wrapper {
+    width: 98%;
+    position: absolute;;
+    top: 10%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+
+    & li {
+      width: 33.33%;
+      padding: 0.5%;
+      // min-width: 220px;
+      // max-width: 400px;
+      padding-left: 8%;
+      padding-right: 8%;
+      float: left;
+      & .content-wrapper {
+        border: 1px solid @line-color;
+        display: block;
+        background: #fff;
+        border-radius: 6px;
+        padding: 2px;
+        text-align: center;
+        height: 165px;
+        position: relative;
+        overflow: hidden;
+        .page-pro();
+        transition: box-shadow .3s @ease-out, transform .3s @ease-out;
+        & > span {
+          height: 100%;
+          display: block;
+          background: #ea0909;
+          padding: 0%;
+        }
+        & p {
+          position: absolute;
+          width: 100%;
+          background: fade(#ddd, 75);
+          left: 0;
+          bottom: -30px;
+          line-height: 30px;
+          color: #fff;
+          transition: bottom .3s @ease-out, background .3s @ease-out;
+        }
+        &:hover {
+          & p {
+            bottom: 0 !important;
+          }
+        }
+      }
+    }
+    @media screen and (min-width:400px) and (max-width:960px){
+      & li {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        & .content-wrapper {
+        }
+      }
+    }
+    @media screen and (min-width:321px) and (max-width:400px){
+      & li {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        & .content-wrapper {
+          height: auto;
+        }
+      }
+    }
+  }
+}
