@@ -4,7 +4,7 @@ import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
-var firstURL = 'http://media.zhehuicao.cn/caozhehui_works/assets/circle.png';
+import firstURL from '../assets/thumbnail/assets/circle.png';
 
 class Content extends React.Component {
   render() {

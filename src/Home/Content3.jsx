@@ -2,6 +2,17 @@ import React from 'react';
 import TweenOne, { TweenOneGroup } from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
+import thumbL1 from '../assets/thumbnail/worksetBg/exec_thumb/L1.jpg';
+import thumbL2 from '../assets/thumbnail/worksetBg/exec_thumb/L2.jpg';
+import thumbL3 from '../assets/thumbnail/worksetBg/exec_thumb/L3.jpg';
+import thumbL4 from '../assets/thumbnail/worksetBg/exec_thumb/L4.jpg';
+import thumbL5 from '../assets/thumbnail/worksetBg/exec_thumb/L5.jpg';
+import thumbL6 from '../assets/thumbnail/worksetBg/exec_thumb/L6.jpg';
+import thumbL7 from '../assets/thumbnail/worksetBg/exec_thumb/L7.jpg';
+import thumbL8 from '../assets/thumbnail/worksetBg/exec_thumb/L8.jpg';
+import thumbL9 from '../assets/thumbnail/worksetBg/exec_thumb/L9.jpg';
+
+
 class Content extends React.Component {
 
   static propTypes = {
@@ -42,15 +53,15 @@ class Content extends React.Component {
 
   render() {
     const dataArray = [
-      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L1.jpg' }, content: { children: 'EXERCICE 1' } } },
-      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L2.jpg' }, content: { children: 'EXERCICE 2' } } },
-      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L3.jpg' }, content: { children: 'EXERCICE 3' } } },
-      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L4.jpg' }, content: { children: 'EXERCICE 4' } } },
-      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L5.jpg' }, content: { children: 'EXERCICE 5' } } },
-      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L6.jpg' }, content: { children: 'EXERCICE 6' } } },
-      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L7.jpg' }, content: { children: 'EXERCICE 7' } } },
-      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L8.jpg' }, content: { children: 'EXERCICE 8' } } },
-      { children: { img: { children: 'http://media.zhehuicao.cn/caozhehui_works/worksetBg/exec_thumb/L9.jpg' }, content: { children: 'EXERCICE 9' } } },
+      { children: { img: { children: thumbL1 }, content: { children: 'EXERCICE 1' } } },
+      { children: { img: { children: thumbL2 }, content: { children: 'EXERCICE 2' } } },
+      { children: { img: { children: thumbL3 }, content: { children: 'EXERCICE 3' } } },
+      { children: { img: { children: thumbL4 }, content: { children: 'EXERCICE 4' } } },
+      { children: { img: { children: thumbL5 }, content: { children: 'EXERCICE 5' } } },
+      { children: { img: { children: thumbL6 }, content: { children: 'EXERCICE 6' } } },
+      { children: { img: { children: thumbL7 }, content: { children: 'EXERCICE 7' } } },
+      { children: { img: { children: thumbL8 }, content: { children: 'EXERCICE 8' } } },
+      { children: { img: { children: thumbL9 }, content: { children: 'EXERCICE 9' } } },
     ];
     const childrenToRender = this.getChildrenToRender(dataArray);
     return (

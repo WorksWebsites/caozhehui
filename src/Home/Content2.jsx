@@ -6,6 +6,11 @@ import BannerAnim, { Element } from 'rc-banner-anim';
 import 'rc-banner-anim/assets/index.css';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
+import group2_1 from '../assets/thumbnail/worksetBg/group2/1.jpg';
+import group2_2 from '../assets/thumbnail/worksetBg/group2/2.jpg';
+import group2_3 from '../assets/thumbnail/worksetBg/group2/3.jpg';
+
+
 const BgElement = Element.BgElement;
 class Banner extends React.Component {
   render() {
@@ -15,9 +20,9 @@ class Banner extends React.Component {
       { children: { title: { children: 'RELATIONS - GROUPE ET LA VILLE' }, content: { children: 'ZHEHUI CAO' }, button: { children: 'Learn More' } } },
     ];
     const defaultImg = [
-      'http://media.zhehuicao.cn/caozhehui_works/worksetBg/group2/1.jpg',
-      'http://media.zhehuicao.cn/caozhehui_works/worksetBg/group2/2.jpg',
-      'http://media.zhehuicao.cn/caozhehui_works/worksetBg/group2/3.jpg',
+      group2_1,
+      group2_2,
+      group2_3,
     ];
     const childrenToRender = childrenData.map((item, i) => {
       const children = item.children;
