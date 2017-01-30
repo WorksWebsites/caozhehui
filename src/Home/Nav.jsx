@@ -7,7 +7,7 @@ import headURL from '../assets/thumbnail/assets/caozhehui.png';
 
 class Header extends React.Component {
   render() {
-    const navData = { menu1: 'INTRO', menu2: 'SERIES1', menu3: 'SERIES2', menu4: 'EXERCISE' };
+    const navData = { menu1: 'INTRO', menu2: 'PROJET 1 ', menu3: 'PROJET 2', menu4: 'EXERCICE' };
       const navChildren = Object.keys(navData).map((key) => {
         return (<Item key={key}>
           <a href={"#"+navData[key]} style={{color: "#fff",textDecoration: "none",}}>{navData[key]}</a>
@@ -24,7 +24,7 @@ class Header extends React.Component {
         animation={{ x: 30, delay: 100, opacity: 0, type: 'from', ease: 'easeOutQuad' }}
         style={{ margin: '0px 4% 0px 0px' }}
       >
-        <a href="#Footer" className="user">
+        <a href="./series_show/information.html" className="user">
           <span className="img">
             <img
               src={headURL}
@@ -33,7 +33,7 @@ class Header extends React.Component {
               height="30"
             />
           </span>
-          <span>ZHEHUI CAO</span>
+          <span>Zhehui CAO</span>
         </a>
       </TweenOne>
       <TweenOne

@@ -32,7 +32,7 @@ class Content extends React.Component {
             </span>
             <p
               key="content"
-              style={{ color: '#fefefe' }}
+              style={{ color: '#fefefe', fontSize: '200%' }}
             >
               ZHEHUI CAO
             </p>
