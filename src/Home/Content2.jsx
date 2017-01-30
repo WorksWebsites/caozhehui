@@ -6,22 +6,20 @@ import BannerAnim, { Element } from 'rc-banner-anim';
 import 'rc-banner-anim/assets/index.css';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
-import group2_1 from '../assets/thumbnail/worksetBg/group2/1.jpg';
-import group2_2 from '../assets/thumbnail/worksetBg/group2/2.jpg';
+const group2URL = './series_show/group2.html';
 import group2_3 from '../assets/thumbnail/worksetBg/group2/3.jpg';
-
 
 const BgElement = Element.BgElement;
 class Banner extends React.Component {
+  handleClick() {
+    window.location.href=group2URL;
+  }
+
   render() {
     const childrenData = [
       { children: { title: { children: 'RELATIONS - GROUPE ET LA VILLE' }, content: { children: 'ZHEHUI CAO' }, button: { children: 'Learn More' } } },
-      { children: { title: { children: 'RELATIONS - GROUPE ET LA VILLE' }, content: { children: 'ZHEHUI CAO' }, button: { children: 'Learn More' } } },
-      { children: { title: { children: 'RELATIONS - GROUPE ET LA VILLE' }, content: { children: 'ZHEHUI CAO' }, button: { children: 'Learn More' } } },
     ];
     const defaultImg = [
-      group2_1,
-      group2_2,
       group2_3,
     ];
     const childrenToRender = childrenData.map((item, i) => {
@@ -64,6 +62,7 @@ class Banner extends React.Component {
           <Button
             type="ghost"
             key="button"
+            onClick={this.handleClick}
             style={children.button.style}
           >
             {children.button.children}
@@ -73,6 +72,7 @@ class Banner extends React.Component {
     });
     return (
       <TweenOne animation={{ opacity: 0, type: 'from' }}>
+        <span id="SERIES2"></span>
         <OverPack
           {...this.props}
           hideProps={{ icon: { reverse: true } }}
