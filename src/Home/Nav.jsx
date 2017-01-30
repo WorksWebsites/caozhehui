@@ -6,10 +6,10 @@ const Item = Menu.Item;
 
 class Header extends React.Component {
   render() {
-    const navData = { menu1: 'INTRO', menu2: 'PROJECT', menu3: 'VIDEO', menu4: 'CASE' };
+    const navData = { menu1: 'INTRO', menu2: 'SERIES1', menu3: 'SERIES2', menu4: 'EXERCISE' };
       const navChildren = Object.keys(navData).map((key) => {
         return (<Item key={key}>
-          {navData[key]}
+          <a href={"#"+navData[key]} style={{color: "#fff",textDecoration: "none",}}>{navData[key]}</a>
         </Item>);
     });
     return (<TweenOne
@@ -23,10 +23,10 @@ class Header extends React.Component {
         animation={{ x: 30, delay: 100, opacity: 0, type: 'from', ease: 'easeOutQuad' }}
         style={{ margin: '0px 4% 0px 0px' }}
       >
-        <a href="" className="user">
+        <a href="#Footer" className="user">
           <span className="img">
             <img
-              src="http://media.caozhehui.cn/caozhehui_works/assets/caozhehui.png"
+              src="http://media.zhehuicao.cn/caozhehui_works/assets/caozhehui.png"
               width="30"
               height="30"
             />

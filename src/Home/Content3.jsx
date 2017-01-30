@@ -2,6 +2,17 @@ import React from 'react';
 import TweenOne, { TweenOneGroup } from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
+import thumbL1 from '../assets/thumbnail/worksetBg/exec_thumb/L1.jpg';
+import thumbL2 from '../assets/thumbnail/worksetBg/exec_thumb/L2.jpg';
+import thumbL3 from '../assets/thumbnail/worksetBg/exec_thumb/L3.jpg';
+import thumbL4 from '../assets/thumbnail/worksetBg/exec_thumb/L4.jpg';
+import thumbL5 from '../assets/thumbnail/worksetBg/exec_thumb/L5.jpg';
+import thumbL6 from '../assets/thumbnail/worksetBg/exec_thumb/L6.jpg';
+import thumbL7 from '../assets/thumbnail/worksetBg/exec_thumb/L7.jpg';
+import thumbL8 from '../assets/thumbnail/worksetBg/exec_thumb/L8.jpg';
+import thumbL9 from '../assets/thumbnail/worksetBg/exec_thumb/L9.jpg';
+
+
 class Content extends React.Component {
 
   static propTypes = {
@@ -22,10 +33,12 @@ class Content extends React.Component {
       >
         <div className="content-wrapper" style={children.wrapper && children.wrapper.style}>
             <span style={children.img.style}>
-              {window.innerWidth > 500 ?
-                <img src={children.img.children} height="100%" alt="exec"/> :
-                <img src={children.img.children} width="100%"  alt="exec"/>
-              }
+              <a href={children.img.url}>
+                {window.innerWidth > 500 ?
+                  <img src={children.img.children} height="100%" alt="exec"/> :
+                  <img src={children.img.children} width="100%"  alt="exec"/>
+                }
+              </a>
             </span>
           <p style={children.content.style}>
             {children.content.children}
@@ -42,19 +55,20 @@ class Content extends React.Component {
 
   render() {
     const dataArray = [
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L1.jpg' }, content: { children: 'EXERCICE 1' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L2.jpg' }, content: { children: 'EXERCICE 2' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L3.jpg' }, content: { children: 'EXERCICE 3' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L4.jpg' }, content: { children: 'EXERCICE 4' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L5.jpg' }, content: { children: 'EXERCICE 5' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L6.jpg' }, content: { children: 'EXERCICE 6' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L7.jpg' }, content: { children: 'EXERCICE 7' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L8.jpg' }, content: { children: 'EXERCICE 8' } } },
-      { children: { img: { children: 'http://media.caozhehui.cn/caozhehui_works/worksetBg/exec_thumb/L9.jpg' }, content: { children: 'EXERCICE 9' } } },
+      { children: { img: { children: thumbL1, url: "series_show/exercise.html#Sans titre peinture 1-5" }, content: { children: 'EXERCISE 1' } } },
+      { children: { img: { children: thumbL2, url: "series_show/exercise.html#Sept ans" }, content: { children: 'EXERCISE 2' } } },
+      { children: { img: { children: thumbL3, url: "series_show/exercise.html#Ne donne pas de moi tes yeux" }, content: { children: 'EXERCISE 3' } } },
+      { children: { img: { children: thumbL4, url: "series_show/exercise.html#Quelqu'un" }, content: { children: 'EXERCISE 4' } } },
+      { children: { img: { children: thumbL5, url: "series_show/exercise.html#Fermer" }, content: { children: 'EXERCISE 5' } } },
+      { children: { img: { children: thumbL6, url: "series_show/exercise.html#Chemise blanche" }, content: { children: 'EXERCISE 6' } } },
+      { children: { img: { children: thumbL7, url: "series_show/exercise.html#Ses histoires" }, content: { children: 'EXERCISE 7' } } },
+      { children: { img: { children: thumbL8, url: "series_show/exercise.html#Fossile" }, content: { children: 'EXERCISE 8' } } },
+      { children: { img: { children: thumbL9, url: "series_show/exercise.html#Dans une galerie" }, content: { children: 'EXERCISE 9' } } },
     ];
     const childrenToRender = this.getChildrenToRender(dataArray);
     return (
       <div
+        id="EXERCISE"
         {...this.props}
         className="content-template-wrapper content4-wrapper"
       >

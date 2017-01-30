@@ -21,10 +21,12 @@ class Footer extends React.Component {
         animation={{ y: '+=30', opacity: 0, type: 'from' }}
         key="footer"
       >
-        <span
-        >
-          Zhehui CAO © 2015-2016
-        </span>
+        <p style={{paddingTop:"10px"}}>Zhehui CAO © 2015-2016</p>
+        <div style={{textAlign:"center",margin:"10px"}}>
+          <p>Telephone: &nbsp;+86 13720077277</p>
+          <p>E-Mail: &nbsp;winneralancao@163.com</p>
+          <p>WebSite: &nbsp; www.zhehuicao.cn</p>
+        </div>
       </TweenOne>
     </OverPack>);
   }
