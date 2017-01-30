@@ -1,11 +1,9 @@
 {
-  "main.css": "static/css/main.e835c139.css",
-  "main.css.map": "static/css/main.e835c139.css.map",
-  "main.js": "static/js/main.b2e0894a.js",
-  "main.js.map": "static/js/main.b2e0894a.js.map",
-  "static/media/1.jpg": "static/media/1.3534faa7.jpg",
-  "static/media/2.jpg": "static/media/2.c03d7fce.jpg",
-  "static/media/3.jpg": "static/media/3.8b46f084.jpg",
+  "main.css": "static/css/main.30633901.css",
+  "main.css.map": "static/css/main.30633901.css.map",
+  "main.js": "static/js/main.ee993740.js",
+  "main.js.map": "static/js/main.ee993740.js.map",
+  "static/media/3.jpg": "static/media/3.1c6d3ac3.jpg",
   "static/media/L1.jpg": "static/media/L1.0e3306fa.jpg",
   "static/media/L2.jpg": "static/media/L2.abef6789.jpg",
   "static/media/L3.jpg": "static/media/L3.19235bac.jpg",
@@ -15,5 +13,6 @@
   "static/media/L7.jpg": "static/media/L7.1a47c64d.jpg",
   "static/media/L8.jpg": "static/media/L8.0db94400.jpg",
   "static/media/L9.jpg": "static/media/L9.3d2ce4cb.jpg",
+  "static/media/caozhehui.png": "static/media/caozhehui.91a2f052.png",
   "static/media/circle.png": "static/media/circle.11287e25.png"
 }

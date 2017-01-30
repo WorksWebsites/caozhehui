@@ -3,6 +3,7 @@ import TweenOne from 'rc-tween-one';
 import { Menu, Icon } from 'antd';
 
 const Item = Menu.Item;
+import headURL from '../assets/thumbnail/assets/caozhehui.png';
 
 class Header extends React.Component {
   render() {
@@ -16,7 +17,7 @@ class Header extends React.Component {
       component="header"
       animation={{ opacity: 1, type: 'from' }}
       {...this.props}
-      style={{ backgroundColor: 'rgba(255, 0, 0, 1)', boxShadow: '10 0px 0px rgba(255, 255, 255, 1)' }}
+      style={{ backgroundColor: 'rgba(234, 9, 9, 1)', boxShadow: '10 0px 0px rgba(255, 255, 255, 1)' }}
     >
       <TweenOne
         className={`${this.props.className}-user`}
@@ -26,7 +27,8 @@ class Header extends React.Component {
         <a href="#Footer" className="user">
           <span className="img">
             <img
-              src="http://media.zhehuicao.cn/caozhehui_works/assets/caozhehui.png"
+              src={headURL}
+              alt=""
               width="30"
               height="30"
             />
