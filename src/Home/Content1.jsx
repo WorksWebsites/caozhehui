@@ -73,7 +73,7 @@ class Banner extends React.Component {
     });
     return (
       <TweenOne animation={{ opacity: 0, type: 'from' }}>
-        <span id="SERIES1"></span>
+        <span id="PROJET 1"></span>
         <OverPack
           {...this.props}
           hideProps={{ icon: { reverse: true } }}

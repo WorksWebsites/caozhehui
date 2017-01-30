@@ -29,10 +29,10 @@ export default class Home extends React.Component {
       <Content0 id="Content0" key="Content0"/>,
       <Content1 id="Content1" key="Content1"/>,
       <Content2 id="Content2" key="Content2"/>,
-      <Content3 id="EXERCISE" key="EXERCISE"/>,
+      <Content3 id="EXERCICE" key="EXERCICE"/>,
       <Footer id="Footer" key="Footer"/>,
       // 导航和页尾不进入锚点区，如果需要，自行添加;
-      <Point key="list" ref="list" data={['Content0', 'Content1', 'Content2', 'EXERCISE']} />,
+      <Point key="list" ref="list" data={['Content0', 'Content1', 'Content2', 'EXERCICE']} />,
     ];
     return (
       <div className="templates-wrapper">

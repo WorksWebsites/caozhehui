@@ -55,20 +55,20 @@ class Content extends React.Component {
 
   render() {
     const dataArray = [
-      { children: { img: { children: thumbL1, url: "series_show/exercise.html#Sans titre peinture 1-5" }, content: { children: 'EXERCISE 1' } } },
-      { children: { img: { children: thumbL2, url: "series_show/exercise.html#Sept ans" }, content: { children: 'EXERCISE 2' } } },
-      { children: { img: { children: thumbL3, url: "series_show/exercise.html#Ne donne pas de moi tes yeux" }, content: { children: 'EXERCISE 3' } } },
-      { children: { img: { children: thumbL4, url: "series_show/exercise.html#Quelqu'un" }, content: { children: 'EXERCISE 4' } } },
-      { children: { img: { children: thumbL5, url: "series_show/exercise.html#Fermer" }, content: { children: 'EXERCISE 5' } } },
-      { children: { img: { children: thumbL6, url: "series_show/exercise.html#Chemise blanche" }, content: { children: 'EXERCISE 6' } } },
-      { children: { img: { children: thumbL7, url: "series_show/exercise.html#Ses histoires" }, content: { children: 'EXERCISE 7' } } },
-      { children: { img: { children: thumbL8, url: "series_show/exercise.html#Fossile" }, content: { children: 'EXERCISE 8' } } },
-      { children: { img: { children: thumbL9, url: "series_show/exercise.html#Dans une galerie" }, content: { children: 'EXERCISE 9' } } },
+      { children: { img: { children: thumbL1, url: "series_show/exercise.html#Sans titre peinture 1-5" }, content: { children: 'EXERCICE 1' } } },
+      { children: { img: { children: thumbL2, url: "series_show/exercise.html#Sept ans" }, content: { children: 'EXERCICE 2' } } },
+      { children: { img: { children: thumbL3, url: "series_show/exercise.html#Ne donne pas de moi tes yeux" }, content: { children: 'EXERCICE 3' } } },
+      { children: { img: { children: thumbL4, url: "series_show/exercise.html#Quelqu'un" }, content: { children: 'EXERCICE 4' } } },
+      { children: { img: { children: thumbL5, url: "series_show/exercise.html#Fermer" }, content: { children: 'EXERCICE 5' } } },
+      { children: { img: { children: thumbL6, url: "series_show/exercise.html#Chemise blanche" }, content: { children: 'EXERCICE 6' } } },
+      { children: { img: { children: thumbL7, url: "series_show/exercise.html#Ses histoires" }, content: { children: 'EXERCICE 7' } } },
+      { children: { img: { children: thumbL8, url: "series_show/exercise.html#Fossile" }, content: { children: 'EXERCICE 8' } } },
+      { children: { img: { children: thumbL9, url: "series_show/exercise.html#Dans une galerie" }, content: { children: 'EXERCICE 9' } } },
     ];
     const childrenToRender = this.getChildrenToRender(dataArray);
     return (
       <div
-        id="EXERCISE"
+        id="EXERCICE"
         {...this.props}
         className="content-template-wrapper content4-wrapper"
       >
