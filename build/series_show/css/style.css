@@ -291,7 +291,7 @@ html {
   z-index: 1;
 }
 .pic_list{
-  height: 330px;/*外层div高度比里层的ul小*/
+  height: 310px;/*外层div高度比里层的ul小*/
   display:block;
   white-space:nowrap;
   text-align: center;
@@ -302,7 +302,7 @@ html {
 }
 .pic_list ul{
   padding: 5px;
-  height: 340px;
+  height: 310px;
   overflow-x:scroll;/*主要*/
   overflow-y:hidden;/*主要*/
 }
@@ -312,6 +312,19 @@ html {
   background:white;
   display:inline-block;
 }
+.left-arrow {
+  float:left;
+  font-size:400%;
+  color:#ccc;
+  top: 40%;
+}
+.right-arrow {
+  float:right;
+  font-size:400%;
+  color:#ccc;
+  top: 40%;
+}
+
 /* SOME DEMO STYLES - NOT REQUIRED */
 body,
 html {

@@ -26,10 +26,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#Monument commemoratif"><i class="fa fa-fw fa-home"></i> Monument commémoratif </a>
+                    <a href="#Monument commemoratif"><i class="fa fa-fw fa-file-o"></i> Monument commémoratif </a>
                 </li>
                 <li>
-                    <a href="#Bonne journee"><i class="fa fa-fw fa-folder"></i> Bonne journée </a>
+                    <a href="#Bonne journee"><i class="fa fa-fw fa-file-o"></i> Bonne journée </a>
                 </li>
                 <li>
                     <a href="#Les escaliers"><i class="fa fa-fw fa-file-o"></i> Les escaliers </a>
@@ -51,29 +51,31 @@
                         <h1 class="page-header">RELATIONS-GROUPE ET LA VILLE</h1>
 												<h3 id="Monument commemoratif">Monument commémoratif</h3>
                         <div class="photoblock-many pic_list" style="margin-bottom:130px;">
+													<span class="glyphicon glyphicon-menu-left left-arrow" onclick="moveLeft(this)"></span>
+													<span class="glyphicon glyphicon-menu-right right-arrow" onclick="moveRight(this)"></span>
 													<ul>
                             <li>
-                               <a href="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/1.jpg" title="1">
+                               <a href="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/1.jpg" title="Monument Commémoratif 1, Photographie, 30×20pouce, 2016, Pékin">
                                  <img src="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/1-thumbnail.jpg" width="auto" height="300" border="0" alt="" id="Monument-commemoratif1" class="photo" />
                                </a>
                             </li>
                             <li>
-                               <a href="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/2.jpg" title="2">
+                               <a href="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/2.jpg" title="Monument Commémoratif 2, Photographie, 30×20pouce, 2016, Pékin">
                                  <img src="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/2-thumbnail.jpg" width="auto" height="300" border="0" alt="" id="Monument-commemoratif2" class="photo" />
                                </a>
                             </li>
                             <li>
-                               <a href="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/3.jpg" title="3">
+                               <a href="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/3.jpg" title="Monument Commémoratif 3, Photographie, 30×20pouce, 2016, Pékin">
                                  <img src="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/3-thumbnail.jpg" width="auto" height="300" border="0" alt="" id="Monument-commemoratif3" class="photo" />
                                </a>
                             </li>
                             <li>
-                               <a href="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/4.jpg" title="4">
+                               <a href="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/4.jpg" title="Monument Commémoratif 4, Photographie, 30×20pouce, 2016, Pékin">
                                  <img src="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/4-thumbnail.jpg" width="auto" height="300" border="0" alt="" id="Monument-commemoratif4" class="photo" />
                                </a>
                             </li>
                             <li>
-                               <a href="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/5.jpg" title="5">
+                               <a href="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/5.jpg" title="Monument Commémoratif 5, Photographie, 30×20pouce, 2016, Pékin">
                                  <img src="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Monument-commemoratif/5-thumbnail.jpg" width="auto" height="300" border="0" alt="" id="Monument-commemoratif5" class="photo" />
                                </a>
                             </li>
@@ -83,17 +85,19 @@
 												<div class="photoblock-many" style="margin-bottom:130px;">
                           <video id="movie1" preload controls loop poster="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Bonne-journee/Bonne-journee.png" width="100%" height="auto">
                             <source src="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Bonne-journee/Bonne-journee.mp4" type="video/mp4" />
-                            您的瀏覽器不支援HTML 5影片播放標籤<video>格式。
-                            Your browser doesn't support the <video> tag.
+                            您的瀏覽器不支援HTML 5影片播放標籤<code><video></code>格式。
+                            Your browser doesn't support the <code><video></code> tag.
                           </video>
+													<span>Bonne Journée, Vidéo, 3min, Environement acoustique, 1080P, 2016, Pékin</span>
 												</div>
                         <h3 id="Les escaliers">Les escaliers</h3>
 												<div class="photoblock-many" style="margin-bottom:100px;">
 													<video id="movie2" preload controls loop poster="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Les-escaliers/Les-escaliers.png" width="100%" height="auto">
 								            <source src="images/works/RELATIONS-GROUPE-ET-LA-VILLE/Les-escaliers/Les-escaliers.mp4" type="video/mp4" />
-								            您的瀏覽器不支援HTML 5影片播放標籤<video>格式。
-								            Your browser doesn't support the <video> tag.
+								            您的瀏覽器不支援HTML 5影片播放標籤<code><video></code>格式。
+								            Your browser doesn't support the <code><video></code> tag.
 								          </video>
+													<span>Les escaliers, Performance, 6min, 1080P, 2016, Pékin</span>
 												</div>
                     </div>
                 </div>
@@ -109,6 +113,14 @@
 	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 	<script src='js/bootstrap.min.js'></script>
 	<script type="text/javascript">
+		function moveLeft(tag) {
+			tag.parentNode.getElementsByTagName('ul')[0].scrollLeft += 200;
+		}
+
+		function moveRight(tag) {
+			tag.parentNode.getElementsByTagName('ul')[0].scrollLeft -= 200;
+		}
+
 		$(document).ready(function () {
 		  var trigger = $('.hamburger'),
 		      overlay = $('.overlay'),
