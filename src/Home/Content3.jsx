@@ -84,7 +84,7 @@ class Content extends React.Component {
             reverseDelay={300}
             style={{ margin: '0px 0px 0px 0px', top: '5%', color: '#fff' }}
           >
-            EXERCICE 1 - 9
+            EXERCICE 1 - 7
           </TweenOne>
           <TweenOneGroup
             className={`${this.props.className}-img-wrapper`}

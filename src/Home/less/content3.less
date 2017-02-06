@@ -14,7 +14,7 @@
   }
   &-img-wrapper {
     width: 98%;
-    position: absolute;;
+    position: absolute;
     top: 10%;
     margin: auto;
     left: 0;
@@ -28,24 +28,29 @@
       // max-width: 400px;
       padding-left: 8%;
       padding-right: 8%;
+      background-color: #ea0909;
       float: left;
       & .content-wrapper {
-        border: 1px solid @line-color;
         display: block;
-        background: #fff;
+        background-color: #ea0909;
         border-radius: 6px;
-        padding: 2px;
+        padding: 0px;
         text-align: center;
         height: 165px;
         position: relative;
         overflow: hidden;
         .page-pro();
         transition: box-shadow .3s @ease-out, transform .3s @ease-out;
+        border: 0px solid #ea0909;
         & > span {
+          width: 100%;
           height: 100%;
           display: block;
           background: #ea0909;
           padding: 0%;
+        }
+        & img {
+          border-radius: 10px;
         }
         & p {
           position: absolute;
